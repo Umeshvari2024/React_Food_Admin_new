@@ -36,10 +36,8 @@ function Checkout() {
 
     alert("🎉 Order Placed Successfully!");
 
-    // Clear Cart
     localStorage.removeItem("cart");
 
-    // Redirect to Success Page
     navigate("/success");
   };
 
@@ -49,7 +47,7 @@ function Checkout() {
         <div className="col-md-8">
           <div className="card shadow p-4">
             <h2 className="text-center mb-4">
-              🛒 Checkout Form
+              🛒 Checkout & Payment
             </h2>
 
             <form onSubmit={handleSubmit}>
@@ -110,6 +108,51 @@ function Checkout() {
                 <option>Debit Card</option>
               </select>
 
+              {/* UPI Payment */}
+              {formData.payment === "UPI" && (
+                <input
+                  type="text"
+                  className="form-control mb-3"
+                  placeholder="Enter UPI ID"
+                />
+              )}
+
+              {/* Card Payment */}
+              {(formData.payment === "Credit Card" ||
+                formData.payment === "Debit Card") && (
+                <>
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Card Number"
+                  />
+
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Card Holder Name"
+                  />
+
+                  <div className="row">
+                    <div className="col-md-6">
+                      <input
+                        type="text"
+                        className="form-control mb-3"
+                        placeholder="Expiry Date (MM/YY)"
+                      />
+                    </div>
+
+                    <div className="col-md-6">
+                      <input
+                        type="password"
+                        className="form-control mb-3"
+                        placeholder="CVV"
+                      />
+                    </div>
+                  </div>
+                </>
+              )}
+
               <button
                 type="submit"
                 className="btn btn-success w-100"
@@ -117,6 +160,14 @@ function Checkout() {
                 Place Order
               </button>
             </form>
+
+            <div className="mt-4 text-center">
+              <h5>🔒 Secure Payment</h5>
+              <p className="text-muted">
+                UPI • Credit Card • Debit Card • Cash on Delivery
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
