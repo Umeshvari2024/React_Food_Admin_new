@@ -20,6 +20,7 @@ import OrderSuccess from "./pages/OrderSuccess";
 import Contact from "./pages/Contact";
 import Profile from "./pages/Profile";
 import Chat from "./pages/Chat";
+import Exam from "./pages/Exam";
 
 function Layout() {
   const location = useLocation();
@@ -56,6 +57,15 @@ function Layout() {
   element={
     <ProtectedRoute>
       <ApiDemo />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/exam"
+  element={
+    <ProtectedRoute>
+      <Exam />
     </ProtectedRoute>
   }
 />

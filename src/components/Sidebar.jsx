@@ -53,6 +53,10 @@ function Sidebar() {
   <Link to="/api">🌐 API Demo</Link>
 </li>
 
+<li>
+  <Link to="/exam">📝 Online Exam</Link>
+</li>
+
             <li>
               <Link to="/checkout">💳 Payments</Link>
             </li>
