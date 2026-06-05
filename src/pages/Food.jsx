@@ -36,62 +36,62 @@ const sendMessage = () => {
   setMessage("");
 };
 
-  const foods = [
-    {
-      id: 1,
-      name: "Pizza",
-      restaurant: "Dominos",
-      category: "Fast Food",
-      price: 299,
-      img: "https://images.unsplash.com/photo-1513104890138-7c749659a591"
-    },
-    {
-      id: 2,
-      name: "Burger",
-      restaurant: "Burger King",
-      category: "Fast Food",
-      price: 199,
-      img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
-    },
-    {
-      id: 3,
-      name: "Pasta",
-      restaurant: "La Italia",
-      category: "Italian",
-      price: 249,
-      img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9"
-    },
-    {
-      id: 4,
-      name: "Biryani",
-      restaurant: "Biryani House",
-      category: "Indian",
-      price: 349,
-      img: "https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd"
-    },
-    {
-      id: 5,
-      name: "Momos",
-      restaurant: "Chinese Corner",
-      category: "Chinese",
-      price: 149,
-      img: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec"
-    },
-    {
-      id: 6,
-      name: "French Fries",
-      restaurant: "Snack Hub",
-      category: "Snacks",
-      price: 99,
-      img: "https://images.unsplash.com/photo-1576107232684-1279f390859f"
-    },
-    {
+ const foods = [
+{
+  id: 1,
+  name: "Pizza",
+  restaurant: "Dominos",
+  category: "Fast Food",
+  price: 299,
+  img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800"
+},
+{
+  id: 2,
+  name: "Burger",
+  restaurant: "Burger King",
+  category: "Fast Food",
+  price: 199,
+  img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800"
+},
+{
+  id: 3,
+  name: "Pasta",
+  restaurant: "La Italia",
+  category: "Italian",
+  price: 249,
+  img: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800"
+},
+{
+  id: 4,
+  name: "Biryani",
+  restaurant: "Biryani House",
+  category: "Indian",
+  price: 349,
+  img: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=800"
+},
+{
+  id: 5,
+  name: "Momos",
+  restaurant: "Chinese Corner",
+  category: "Chinese",
+  price: 149,
+  img: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800"
+},
+{
+  id: 6,
+  name: "French Fries",
+  restaurant: "Snack Hub",
+  category: "Snacks",
+  price: 99,
+  img: "https://images.unsplash.com/photo-1576107232684-1279f390859f?w=800"
+},
+{
   id: 7,
   name: "Paneer Tikka",
   restaurant: "Punjabi Tadka",
   category: "Indian",
   price: 279,
-  img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8"
+  img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=800"
 },
 {
   id: 8,
@@ -99,7 +99,7 @@ const sendMessage = () => {
   restaurant: "Arabian Bites",
   category: "Fast Food",
   price: 229,
-  img: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783"
+  img: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=800"
 },
 {
   id: 9,
@@ -107,7 +107,7 @@ const sendMessage = () => {
   restaurant: "Chinese Corner",
   category: "Chinese",
   price: 189,
-  img: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841"
+  img: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=800"
 },
 {
   id: 10,
@@ -115,7 +115,7 @@ const sendMessage = () => {
   restaurant: "South Spice",
   category: "South Indian",
   price: 149,
-  img: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976"
+  img: "https://images.unsplash.com/photo-1630383249896-424e482df921?w=800"
 },
 {
   id: 11,
@@ -123,7 +123,7 @@ const sendMessage = () => {
   restaurant: "Madras Cafe",
   category: "South Indian",
   price: 119,
-  img: "https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+  img: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800"
 },
 {
   id: 12,
@@ -131,7 +131,7 @@ const sendMessage = () => {
   restaurant: "Cafe Mocha",
   category: "Beverages",
   price: 129,
-  img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735"
+  img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800"
 },
 {
   id: 13,
@@ -139,7 +139,7 @@ const sendMessage = () => {
   restaurant: "Sweet Treats",
   category: "Desserts",
   price: 199,
-  img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+  img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
 },
 {
   id: 14,
@@ -147,7 +147,7 @@ const sendMessage = () => {
   restaurant: "Cream Bell",
   category: "Desserts",
   price: 99,
-  img: "https://images.unsplash.com/photo-1563805042-7684c019e1cb"
+  img: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800"
 },
 {
   id: 15,
@@ -155,7 +155,7 @@ const sendMessage = () => {
   restaurant: "Royal Thali",
   category: "Indian",
   price: 399,
-  img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe"
+  img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800"
 },
 {
   id: 16,
@@ -163,7 +163,7 @@ const sendMessage = () => {
   restaurant: "Snack Hub",
   category: "Snacks",
   price: 129,
-  img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af"
+  img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=800"
 },
 {
   id: 17,
@@ -171,7 +171,7 @@ const sendMessage = () => {
   restaurant: "BBQ Nation",
   category: "Indian",
   price: 349,
-  img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+  img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800"
 },
 {
   id: 18,
@@ -179,7 +179,7 @@ const sendMessage = () => {
   restaurant: "Dragon Wok",
   category: "Chinese",
   price: 199,
-  img: "https://images.unsplash.com/photo-1512058564366-18510be2db19"
+  img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800"
 },
 {
   id: 19,
@@ -187,7 +187,7 @@ const sendMessage = () => {
   restaurant: "Tea Time",
   category: "Snacks",
   price: 49,
-  img: "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+  img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800"
 },
 {
   id: 20,
@@ -195,11 +195,11 @@ const sendMessage = () => {
   restaurant: "Juice World",
   category: "Beverages",
   price: 99,
-  img: "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4"
+  img: "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=800"
 }
-
+];
     
-  ];
+  
 
   const total = cart.reduce(
     (sum, item) => sum + item.price * item.qty,
@@ -211,58 +211,119 @@ const sendMessage = () => {
 
       {/* ABOUT SECTION */}
 
-      <div className="card shadow-lg p-5 mb-5 text-center">
-        <h1 className="mb-3">
-          🍽 Welcome To FoodPro
-        </h1>
+     <div
+  className="mb-5"
+  style={{
+    background:
+      "linear-gradient(135deg,#fc8019,#ff9f43)",
+    borderRadius: "30px",
+    padding: "60px 30px",
+    color: "white",
+    overflow: "hidden"
+  }}
+>
+  <div className="row align-items-center">
 
-        <p className="lead text-muted">
-          India's Trusted Online Food Delivery Platform
-        </p>
+    <div className="col-md-6">
 
-        <div className="row mt-4">
-          <div className="col-md-3">
-            <h2>🚀</h2>
-            <h5>Fast Delivery</h5>
-            <p>Food delivered in 30 minutes.</p>
-          </div>
+      <h1
+        style={{
+          fontSize: "3rem",
+          fontWeight: "bold"
+        }}
+      >
+        🍔 Food Delivered
+        <br />
+        In Minutes
+      </h1>
 
-          <div className="col-md-3">
-            <h2>🍔</h2>
-            <h5>100+ Foods</h5>
-            <p>Large variety of delicious meals.</p>
-          </div>
+      <p
+        style={{
+          fontSize: "18px",
+          marginTop: "15px"
+        }}
+      >
+        Order Pizza, Burger, Biryani,
+        Momos, Dosa and more from
+        your favourite restaurants.
+      </p>
 
-          <div className="col-md-3">
-            <h2>⭐</h2>
-            <h5>Best Quality</h5>
-            <p>Fresh ingredients every day.</p>
-          </div>
+      <button
+  className="btn btn-light btn-lg mt-3"
+  onClick={() => {
+    document
+      .getElementById("food-menu")
+      ?.scrollIntoView({
+        behavior: "smooth"
+      });
+  }}
+>
+  Order Now
+</button>
 
-          <div className="col-md-3">
-            <h2>👨‍🍳</h2>
-            <h5>Expert Chefs</h5>
-            <p>Prepared by professional chefs.</p>
-          </div>
-        </div>
+    </div>
+
+    <div className="col-md-6 text-center">
+
+      <img
+        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+        alt="Food"
+        style={{
+          width: "100%",
+          maxHeight: "350px",
+          objectFit: "cover",
+          borderRadius: "25px"
+        }}
+      />
+
+    </div>
+
+  </div>
+</div>
+
+
+{/* WHAT'S ON YOUR MIND */}
+
+<div className="container my-5">
+  <h2 className="fw-bold mb-4">
+    What's on your mind?
+  </h2>
+
+  <div className="row text-center">
+    {foods.map((item) => (
+      <div
+        key={item.id}
+        className="col-lg-2 col-md-3 col-4 mb-4"
+      >
+        <img
+          src={item.img}
+          alt={item.name}
+          style={{
+            width: "120px",
+            height: "120px",
+            borderRadius: "50%",
+            objectFit: "cover",
+            border: "4px solid #fc8019"
+          }}
+        />
+
+        <h6 className="mt-2">{item.name}</h6>
       </div>
+    ))}
+  </div>
+</div>
 
-      {/* TITLE */}
-
-      <div className="text-center mb-4">
-        <h1>🍔 Food Menu</h1>
-
-        <p className="text-muted">
-          Delicious food delivered to your doorstep
-        </p>
-      </div>
-     {successMsg && (
+{successMsg && (
   <div
-    className="alert alert-success text-center mb-3"
+    className="alert alert-success text-center"
     style={{
-      position: "sticky",
-      top: "10px",
-      zIndex: 9999
+      position: "fixed",
+      top: "20px",
+      right: "20px",
+      zIndex: "99999",
+      minWidth: "320px",
+      borderRadius: "15px",
+      fontWeight: "bold"
     }}
   >
     {successMsg}
@@ -275,11 +336,13 @@ const sendMessage = () => {
         <h4>🛒 Cart Items: {cart.length}</h4>
       </div>
 
+      
+
       {/* SEARCH */}
 
       <input
         type="text"
-        className="form-control mb-3"
+        className="form-control form-control-lg mb-3"
         placeholder="Search Food..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
@@ -288,7 +351,7 @@ const sendMessage = () => {
       {/* CATEGORY FILTER */}
 
       <select
-        className="form-select mb-4"
+        className="form-select form-select-lg mb-4"
         value={category}
         onChange={(e) => setCategory(e.target.value)}
       >
@@ -305,7 +368,7 @@ const sendMessage = () => {
 
       {/* FOOD ITEMS */}
 
-     <div className="row">
+     <div id="food-menu" className="row">
 
 {foods
 .filter((item) =>
@@ -331,8 +394,13 @@ item.category === category
 
       {/* CART */}
 
-      <div className="card shadow p-4 mt-5">
-
+            <div
+  className="card shadow-lg p-4 mt-5"
+  style={{
+    borderRadius: "25px",
+    border: "none"
+  }}
+>
         <h3>🛒 Your Cart</h3>
 
         {cart.length === 0 ? (
@@ -425,6 +493,125 @@ item.category === category
     Send
   </button>
 </div>
+
+{/* DOWNLOAD APP BANNER */}
+
+<div
+  className="my-5"
+  style={{
+    background: "#0f172a",
+    borderRadius: "20px",
+    padding: "40px"
+  }}
+>
+  <div className="row align-items-center">
+
+    <div className="col-md-6 text-white">
+      <h1 className="fw-bold">
+        Get The FoodPro App Now!
+      </h1>
+
+      <p>
+        For best offers and discounts
+        curated specially for you.
+      </p>
+    </div>
+
+    <div className="col-md-6 text-center">
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://foodpro.com"
+        alt="QR"
+        style={{
+          background: "white",
+          padding: "10px",
+          borderRadius: "15px"
+        }}
+      />
+    </div>
+
+  </div>
+</div>
+
+
+{/* CITIES WITH FOOD DELIVERY */}
+
+<div className="my-5">
+  <h2 className="fw-bold mb-4">
+    Cities with food delivery
+  </h2>
+
+  <div className="row g-3">
+
+    {[
+      "Bangalore",
+      "Gurgaon",
+      "Hyderabad",
+      "Delhi",
+      "Mumbai",
+      "Pune",
+      "Kolkata",
+      "Chennai",
+      "Ahmedabad",
+      "Chandigarh",
+      "Jaipur"
+    ].map((city, index) => (
+      <div key={index} className="col-md-3">
+        <button
+          className="btn w-100"
+          style={{
+            border: "1px solid #ddd",
+            borderRadius: "12px",
+            padding: "15px"
+          }}
+        >
+          Order food online in {city}
+        </button>
+      </div>
+    ))}
+
+  </div>
+</div>
+
+
+{/* CITIES WITH GROCERY DELIVERY */}
+
+<div className="my-5">
+  <h2 className="fw-bold mb-4">
+    Cities with grocery delivery
+  </h2>
+
+  <div className="row g-3">
+
+    {[
+      "Bangalore",
+      "Gurgaon",
+      "Hyderabad",
+      "Delhi",
+      "Mumbai",
+      "Pune",
+      "Kolkata",
+      "Chennai",
+      "Ahmedabad",
+      "Chandigarh",
+      "Jaipur"
+    ].map((city, index) => (
+      <div key={index} className="col-md-3">
+        <button
+          className="btn w-100"
+          style={{
+            border: "1px solid #ddd",
+            borderRadius: "12px",
+            padding: "15px"
+          }}
+        >
+          Order grocery delivery in {city}
+        </button>
+      </div>
+    ))}
+
+  </div>
+</div>
+
       {/* WHY CHOOSE US */}
 
       <div className="card shadow p-5 mt-5">

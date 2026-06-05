@@ -696,4 +696,101 @@ body {
     overflow-x: auto;
     white-space: nowrap;
   }
+}.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.dashboard-card {
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-header {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* FOOD ICONS */
+
+.food-icon img {
+  transition: 0.3s;
+}
+
+.food-icon img:hover {
+  transform: scale(1.1);
+}
+
+.btn-success {
+  background: #fc8019 !important;
+  border: none !important;
+}
+
+.btn-success:hover {
+  background: #e56f00 !important;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+body {
+  background: #f8f8f8;
+}
+.card {
+  border: none;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card img {
+  transition: 0.4s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background: #fc8019 !important;
+  border: none !important;
+}
+
+.btn-success:hover {
+  background: #e76f00 !important;
+}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+}
+
+body {
+  background: #f8f8f8;
+}
+.card:hover {
+  transform: translateY(-8px);
+  transition: 0.3s ease;
+}
+
+.card img {
+  transition: 0.4s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
 }

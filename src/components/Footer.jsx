@@ -1,56 +1,104 @@
 function Footer() {
   return (
-    <footer className="bg-dark text-white mt-5">
-      <div className="container py-5">
-
+    <footer
+      style={{
+        backgroundColor: "#1d1d1d",
+        color: "#ffffff",
+        padding: "60px 20px",
+        marginTop: "50px",
+      }}
+    >
+      <div className="container">
         <div className="row">
 
-          {/* Company Info */}
-          <div className="col-md-4 mb-4">
-            <h4 className="text-warning">🍽 FoodPro</h4>
-            <p>
-              FoodPro is a modern food delivery platform
-              offering fast, fresh and delicious meals
-              directly to your doorstep.
+          {/* Logo Section */}
+          <div className="col-md-3 mb-4">
+            <h1
+              style={{
+                color: "#fc8019",
+                fontWeight: "bold",
+              }}
+            >
+              🍽 FoodPro
+            </h1>
+
+            <p style={{ color: "#cccccc" }}>
+              © 2026 FoodPro Limited
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div className="col-md-4 mb-4">
-            <h5>Quick Links</h5>
+          {/* Company */}
+          <div className="col-md-3 mb-4">
+            <h5 className="fw-bold mb-3">
+              Company
+            </h5>
 
-            <ul className="list-unstyled">
-              <li><a href="/" className="text-white text-decoration-none">Home</a></li>
-              <li><a href="/dashboard" className="text-white text-decoration-none">Dashboard</a></li>
-              <li><a href="/food" className="text-white text-decoration-none">Food Menu</a></li>
-              <li><a href="/login" className="text-white text-decoration-none">Login</a></li>
-            </ul>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Team</p>
+            <p>FoodPro One</p>
+            <p>FoodPro Instamart</p>
           </div>
 
           {/* Contact */}
-          <div className="col-md-4 mb-4">
-            <h5>Contact Us</h5>
+          <div className="col-md-3 mb-4">
+            <h5 className="fw-bold mb-3">
+              Contact Us
+            </h5>
 
-            <p>📍 Pune, Maharashtra, India</p>
-            <p>📞 +91 9876543210</p>
-            <p>✉ support@foodpro.com</p>
+            <p>Help & Support</p>
+            <p>Partner With Us</p>
+            <p>Ride With Us</p>
 
-            <div className="fs-4">
-              🌐 📘 📷 🐦
+            <h5 className="fw-bold mt-4 mb-3">
+              Legal
+            </h5>
+
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Cookie Policy</p>
+          </div>
+
+          {/* Available Cities */}
+          <div className="col-md-3 mb-4">
+            <h5 className="fw-bold mb-3">
+              Available In
+            </h5>
+
+            <p>Bangalore</p>
+            <p>Mumbai</p>
+            <p>Pune</p>
+            <p>Delhi</p>
+            <p>Hyderabad</p>
+            <p>Chennai</p>
+
+            <h5 className="fw-bold mt-4 mb-3">
+              Social Links
+            </h5>
+
+            <div style={{ fontSize: "28px" }}>
+              📘 📷 🐦 ▶️
             </div>
           </div>
 
         </div>
 
-        <hr />
+        <hr
+          style={{
+            borderColor: "#444",
+          }}
+        />
 
         <div className="text-center">
-          <p className="mb-0">
-            © 2026 FoodPro | Designed with React & Bootstrap |
-            All Rights Reserved.
+          <p
+            style={{
+              color: "#cccccc",
+              marginBottom: 0,
+            }}
+          >
+            © 2026 FoodPro | All Rights Reserved
           </p>
         </div>
-
       </div>
     </footer>
   );

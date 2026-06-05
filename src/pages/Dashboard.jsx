@@ -1,11 +1,12 @@
 import Sidebar from "../components/Sidebar";
 import {
-  BarChart,
-  Bar,
+  LineChart,
+  Line,
   XAxis,
   YAxis,
   Tooltip,
   ResponsiveContainer,
+  CartesianGrid,
 } from "recharts";
 
 function Dashboard() {
@@ -63,6 +64,25 @@ function Dashboard() {
           </div>
         </div>
 
+        <div className="d-flex justify-content-between align-items-center bg-white p-3 rounded shadow-sm mb-4">
+  <input
+    type="text"
+    className="form-control w-50"
+    placeholder="Search Orders, Users..."
+  />
+
+  <div className="d-flex align-items-center">
+    <span className="me-3">🔔</span>
+
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+      width="45"
+      className="rounded-circle"
+      alt=""
+    />
+  </div>
+</div>
+
         {/* STATS */}
         <div className="row mt-4">
           {stats.map((s, i) => (
@@ -80,17 +100,21 @@ function Dashboard() {
         <div className="card shadow p-4">
           <h4>📈 Weekly Orders Analytics</h4>
 
-          <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={chartData}>
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Bar
-                dataKey="orders"
-                fill="#0d6efd"
-              />
-            </BarChart>
-          </ResponsiveContainer>
+         <ResponsiveContainer width="100%" height={300}>
+  <LineChart data={chartData}>
+    <CartesianGrid strokeDasharray="3 3" />
+    <XAxis dataKey="name" />
+    <YAxis />
+    <Tooltip />
+
+    <Line
+      type="monotone"
+      dataKey="orders"
+      stroke="#0d6efd"
+      strokeWidth={3}
+    />
+  </LineChart>
+</ResponsiveContainer>
         </div>
 
         {/* QUICK ACTIONS */}
@@ -261,9 +285,59 @@ function Dashboard() {
           </table>
         </div>
 
+{/* RECENT ACTIVITIES */}
+<div className="card shadow p-4 mt-4">
+  <h4>⚡ Recent Activities</h4>
+
+  <ul className="list-group">
+    <li className="list-group-item">New Order Received #1245</li>
+    <li className="list-group-item">Payment Successful ₹499</li>
+    <li className="list-group-item">New User Registered</li>
+    <li className="list-group-item">Order Delivered Successfully</li>
+  </ul>
+</div>
+
+{/* TOP SELLING FOODS */}
+<div className="card shadow p-4 mt-4 mb-5">
+  <h4>🔥 Top Selling Foods</h4>
+
+  <table className="table">
+    <thead>
+      <tr>
+        <th>Food</th>
+        <th>Sales</th>
+        <th>Revenue</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Pizza</td>
+        <td>220</td>
+        <td>₹65,000</td>
+      </tr>
+
+      <tr>
+        <td>Burger</td>
+        <td>180</td>
+        <td>₹42,000</td>
+      </tr>
+
+      <tr>
+        <td>Biryani</td>
+        <td>150</td>
+        <td>₹38,000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
       </div>
     </div>
+
+
   );
+  
 }
 
 export default Dashboard;

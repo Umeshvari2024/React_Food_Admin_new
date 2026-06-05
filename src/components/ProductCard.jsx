@@ -3,16 +3,17 @@ function ProductCard({ product, addToCart }) {
     <div className="col-md-4 mb-4">
       <div className="card shadow h-100">
 
-        <img
-          src={product.img}
-          alt={product.name}
-          className="card-img-top"
-          style={{
-            height: "220px",
-            objectFit: "cover"
-          }}
-        />
-
+       <img
+  src={product.img}
+  alt={product.name}
+  className="card-img-top"
+  style={{
+    height: "250px",
+    objectFit: "cover",
+    borderTopLeftRadius: "20px",
+    borderTopRightRadius: "20px"
+  }}
+/>
         <div className="card-body">
 
           <h5>{product.name}</h5>
@@ -28,11 +29,17 @@ function ProductCard({ product, addToCart }) {
           <h6>₹ {product.price}</h6>
 
           <button
-            className="btn btn-success w-100"
-            onClick={() => addToCart(product)}
-          >
-            Add To Cart
-          </button>
+  className="btn w-100"
+  style={{
+    background: "#fc8019",
+    color: "white",
+    fontWeight: "bold",
+    borderRadius: "12px"
+  }}
+  onClick={() => addToCart(product)}
+>
+  🛒 Add To Cart
+</button>
 
         </div>
 
